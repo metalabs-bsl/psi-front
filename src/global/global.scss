@@ -1,0 +1,24 @@
+@import "./reset";
+
+body {
+  background: #f0f2ef;
+}
+
+.container {
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.defTitle {
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1.3em;
+  color: #242423;
+  font-family: var(--second-family);
+  & span {
+    color: #c05124;
+    font-style: italic;
+    font-family: var(--font-family);
+  }
+}

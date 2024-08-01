@@ -1,0 +1,58 @@
+.author {
+  margin-bottom: 40px;
+
+  .wrapper {
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .content {
+    padding: 20px;
+    border-radius: 17px;
+    background-color: #fdda70;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .list {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item {
+    position: relative;
+    padding-left: 40px;
+
+    :before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      top: 0px;
+      left: 0;
+      background-color: #c05124;
+    }
+  }
+
+  .imgWrapper {
+    width: 100%;
+    max-width: 430px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 17px;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

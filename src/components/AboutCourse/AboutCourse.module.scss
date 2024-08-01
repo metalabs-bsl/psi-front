@@ -1,0 +1,129 @@
+.aboutCourse {
+  margin-bottom: 40px;
+
+  .wrapper {
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #fffffc;
+  }
+
+  .inner {
+    padding: 20px;
+    border-radius: 17px;
+    background-color: #c05124;
+  }
+
+  .title {
+    color: #fffffc;
+    margin-bottom: 15px;
+  }
+
+  .topList {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    margin-bottom: 15px;
+  }
+
+  .topItem {
+    border-radius: 15px;
+    padding: 28px 20px;
+    background-color: #fffffc;
+  }
+
+  .topText {
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3em;
+    color: #242423;
+  }
+
+  .bottomList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 16px; /* Настроить размер промежутков по необходимости */
+  }
+
+  .bottomItem {
+    padding: 20px;
+    border-radius: 17px;
+    background-color: #fffffc;
+
+    &:nth-child(1) {
+      grid-column: 1 / 3;
+      grid-row: 1;
+    }
+
+    &:nth-child(2) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    &:nth-child(3) {
+      grid-column: 2;
+      grid-row: 2;
+    }
+  }
+
+  .textCircle {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 15px;
+
+    & span {
+      position: absolute;
+      top: 7px;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #242423;
+    }
+  }
+
+  .bottomText {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #242423;
+  }
+}
+
+@media (max-width:834px) {
+  .aboutCourse {
+    .title {
+      font-size: 30px;
+    }
+    .topText {
+      font-size: 18px;
+    }
+    .bottomText {
+      font-size: 22px;
+    }
+  }
+}
+@media (max-width:491px) {
+  .aboutCourse{
+    .topList {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+  }
+  
+
+}
+@media (max-width:375px) {
+  .aboutCourse {
+    .title {
+      font-size: 26px;
+    }
+    .topText {
+      font-size: 16px;
+    }
+    .bottomText {
+      font-size: 18px;
+    }
+  }
+
+}

@@ -1,8 +1,24 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Lobster_Two, Inter, Prata  } from "next/font/google";
+import "../global/global.scss";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const prata = Prata({
+  subsets: ['cyrillic'],
+  display: 'swap',
+  weight: '400',
+  variable: '--second-family'
+})
+
+const lobster = Lobster_Two({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400',
+  variable: '--font-family'
+})
+
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} ${lobster.className} ${prata.className}`}>{children}</body>
     </html>
   );
 }

@@ -1,0 +1,228 @@
+@mixin beforeAfter {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 1.5px;
+  background-color: #fffffc;
+  border-radius: 1px;
+  left: 0;
+  top: 5px;
+  right: 0;
+  bottom: 0;
+}
+@mixin burgerX {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 1.5px;
+  background-color: #242423;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 1px;
+}
+
+.header {
+  margin-top: 40px;
+
+  .headerNav {
+    color: #fff;
+    border-radius: 17px;
+    background: #242423;
+    box-shadow: 0 2px 18px 0 rgba(167, 167, 167, 0.18);
+    padding: 8px 20px;
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .headerList {
+    justify-content: space-between;
+    gap: 20px;
+    display: flex;
+    align-items: start;
+    width: 100%;
+    max-width: 743px;
+  }
+
+  .headerLink {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.3em;
+    color: #fffffc;
+    text-align: center;
+  }
+
+  .headerBtn {
+    padding: 10px 36px 15px;
+    border-radius: 13px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: #fffffc;
+    font-family: var(--font-family);
+    background-color: #c05124;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #f86a31;
+    }
+  }
+  &__burger {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 126px;
+    height: 57px;
+    background: #242423;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fffffc;
+    gap: 5px;
+    margin-top: 30px;
+    font-family: var(--font-family);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  &__btn {
+    border-radius: 13px;
+    padding: 16px 45px;
+    width: 218px;
+    height: 60px;
+    background: #242423;
+    color: #fffffc;
+  }
+  .headerContainer > .headerLogo {
+    display: none;
+  }
+}
+
+.burger__btn {
+  &_line {
+    width: 18px;
+    height: 1.5px;
+    background-color: #fffffc;
+    border-radius: 1px;
+    position: relative;
+  }
+  &_line::after {
+    @include beforeAfter();
+  }
+  &_line::before {
+    @include beforeAfter();
+    top: -5px;
+  }
+}
+.burger {
+  &__section {
+    display: block;
+    position: fixed;
+    background: #fdda70;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    visibility: 0;
+    opacity: 0;
+    transition: 0.1s ease-in-out;
+  }
+  &__header {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 52px;
+    padding-top: 40px;
+  }
+  &__close {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  &__line_x {
+    position: relative;
+  }
+  &__line_x::after {
+    @include burgerX();
+    transform: rotate(-45deg);
+  }
+  &__line_x::before {
+    @include burgerX();
+    transform: rotate(45deg);
+  }
+  &__container {
+    padding-top: 80px;
+  }
+  &__menu {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-family: var(--font-family);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
+
+@media (width < 1113px) {
+  .header {
+    .headerLink {
+      font-size: 18px;
+    }
+    .headerList {
+      gap: 80px;
+      justify-content: center;
+      width: fit-content;
+    }
+    .headerBtn {
+      font-size: 18px;
+    }
+  }
+}
+@media (width < 989px) {
+  .header {
+    .headerList {
+      gap: 60px;
+    }
+  }
+}
+@media (width < 909px) {
+  .header {
+    .headerList {
+      gap: 40px;
+    }
+  }
+}
+@media (max-width: 834px) {
+  .header {
+    .headerNav {
+      display: none;
+    }
+    .headerContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: -40px;
+    }
+    &__burger {
+      display: flex;
+    }
+    .headerContainer > .headerLogo {
+      display: block;
+      margin-top: 25px;
+    }
+  }
+}
