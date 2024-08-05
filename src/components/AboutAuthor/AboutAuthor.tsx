@@ -3,7 +3,7 @@ import authorImg from "../../../public/images/authorImg.png";
 import styles from "./AboutAuthor.module.scss";
 export const AboutAuthor = () => {
   return (
-    <section className={styles.author}>
+    <section className={styles.author} id="about">
       <div className={`${styles.container} container`}>
         <div className={styles.wrapper}>
           <div className={styles.content}>

@@ -2,10 +2,10 @@ import styles from "./VideoCourse.module.scss";
 
 export const VideoCourse = () => {
   return (
-    <section className={styles.video}>
+    <section className={styles.video} id="video">
       <div className={`${styles.container} container`}>
         <div className={styles.wrapper}>
-          <h2 className={styles.title}>
+          <h2 className={styles.subtitle}>
             Революционный видеокурс "Стройность через подсознание" - ваш ключ к
             <span> идеальному телу!</span>
           </h2>

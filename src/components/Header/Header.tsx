@@ -16,7 +16,7 @@ export const Header = () => {
     const modal = modalMenu.current;
     if (modal) {
       modal.style.display = "block";
-
+      document.body.style.overflow = 'hidden'
       setTimeout(() => {
         (modal.style.visibility = "visible"), (modal.style.opacity = "1");
       }, 100);
@@ -24,6 +24,7 @@ export const Header = () => {
   };
   const closeMenu = () => {
     const modal = modalMenu.current;
+    document.body.style.overflow = 'scroll'
     if (modal) {
       modal.style.opacity = "0";
       setTimeout(() => {
@@ -35,41 +36,41 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <div className={`${styles.headerContainer} container`}>
-        <a className={styles.headerLogo} href="#">
+        <a className={styles.headerLogo} href="#hero">
           <Image src={logo} alt="Логотип" />
         </a>
         <nav className={styles.headerNav}>
-          <a className={styles.headerLogo} href="#">
+          <a className={styles.headerLogo} href="#hero">
             <Image src={logo} alt="Логотип" />
           </a>
           <ul className={styles.headerList}>
             <li className={styles.headerItem}>
-              <a className={styles.headerLink} href="#">
+              <a className={styles.headerLink} href="#course">
                 О курсе
               </a>
             </li>
             <li className={styles.headerItem}>
-              <a className={styles.headerLink} href="#">
+              <a className={styles.headerLink} href="#advantages">
                 Преимущества
               </a>
             </li>
             <li className={styles.headerItem}>
-              <a className={styles.headerLink} href="#">
+              <a className={styles.headerLink} href="#about">
                 Обо мне
               </a>
             </li>
             <li className={styles.headerItem}>
-              <a className={styles.headerLink} href="#">
+              <a className={styles.headerLink} href="#price">
                 Пакеты
               </a>
             </li>
             <li className={styles.headerItem}>
-              <a className={styles.headerLink} href="#">
+              <a className={styles.headerLink} href="#swiper">
                 Отзывы
               </a>
             </li>
           </ul>
-          <button className={styles.headerBtn}>Купить курс</button>
+          <button className={styles.headerBtn}><a href="#form">Купить курс</a></button>
         </nav>
         <button className={styles.header__burger} onClick={openMenu} hidden>
           <div className={styles.burger__btn_line}></div>Меню
@@ -86,7 +87,7 @@ export const Header = () => {
                 <ul className={styles.burger__menu}>
                   <li>
                     <a
-                      href="#technique"
+                      href="#hero"
                       onClick={closeMenu}
                       className={`${styles.header__link} ${styles.headerLogo}`}
                     >
@@ -95,7 +96,7 @@ export const Header = () => {
                   </li>
                   <li>
                     <a
-                      href="#technique"
+                      href="#course"
                       onClick={closeMenu}
                       className={styles.header__link}
                     >
@@ -104,7 +105,7 @@ export const Header = () => {
                   </li>
                   <li>
                     <a
-                      href="#about"
+                      href="#advantages"
                       onClick={closeMenu}
                       className={styles.header__link}
                     >
@@ -113,7 +114,7 @@ export const Header = () => {
                   </li>
                   <li>
                     <a
-                      href="#review"
+                      href="#about"
                       onClick={closeMenu}
                       className={styles.header__link}
                     >
@@ -122,7 +123,7 @@ export const Header = () => {
                   </li>
                   <li>
                     <a
-                      href="#advantages"
+                      href="#price"
                       onClick={closeMenu}
                       className={styles.header__link}
                     >
@@ -131,7 +132,7 @@ export const Header = () => {
                   </li>
                   <li>
                     <a
-                      href="#price"
+                      href="#swiper"
                       onClick={closeMenu}
                       className={styles.header__link}
                     >

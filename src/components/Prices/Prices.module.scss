@@ -23,6 +23,9 @@
   &__liberation {
     background: #fdda70;
   }
+  &__liberation  &__btn:hover {
+    background-color: #000;
+  }
   &__subTitle {
     @include subtitle();
     margin-bottom: 15px;
@@ -82,13 +85,16 @@
     font-size: 30px;
     color: #fffffc;
     border-radius: 17px;
+    transition: 0.2s ease-in-out;
   }
   &__reload {
-    border: 1px solid #242423;
-    
+    border: 1px solid #242423; 
   }
   &__reload > &__btn {
     background: #c05124;
+  }
+  &__reload &__btn:hover {
+    background-color: #f86a31;
   }
   &__reload > &__price {
     background: #fdda70;
@@ -96,6 +102,9 @@
   &__transformation {
     background: #c05124;
     color: #fffffc;
+  }
+  &__transformation &__btn:hover {
+    background-color: #ffd30e;
   }
    &__transformation > ul{
     color: #fffffc;
@@ -106,5 +115,61 @@
   &__transformation > &__btn{
     background: #fdda70;
     color: #242423;
+  }
+}
+
+@media (max-width:834px) {
+  .price {
+    &__card {
+      padding: 30px;
+    }
+    &__subTitle {
+      font-size: 30px;
+    }
+    &__price {
+      font-size: 30px;
+    }
+    &__list {
+      font-size: 22px;
+    }
+    &__desc {
+      font-size: 18px;
+    }
+    &__btn {
+      font-size: 26px;
+    }
+  }
+}
+@media (max-width:375px) {
+  .price {
+    &__card {
+      padding: 20px;
+    }
+    &__subTitle {
+      font-size: 26px;
+    }
+    &__price {
+      font-size: 26px;
+    }
+    &__list {
+      font-size: 18px;
+    }
+    &__desc {
+      font-size: 16px;
+    }
+    &__btn {
+      font-size: 22px;
+    }
+    &__price {
+    height: 50px;
+       p {
+        width: 130px;
+       }
+    }
+    &__list {
+      li::before {       
+        left: -30px;
+      }
+    }
   }
 }

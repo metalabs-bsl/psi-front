@@ -1,0 +1,181 @@
+#msform {
+  width: 100%;
+  max-width: 900px;
+  margin: 25px auto;
+  text-align: center;
+  // position: relative;
+}
+#msform form {
+  background: white;
+  border: 0 none;
+  border-radius: 15px;
+  box-shadow: 0 0 15px 1px rgba(167, 163, 163, 0.4);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 10%;
+
+  /*stacking fieldsets above each other*/
+  position: relative;
+}
+
+/*Hide all except first fieldset*/
+#msform form:not(:first-of-type) {
+  display: none;
+}
+/*inputs*/
+
+#msform input {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #2c3e50;
+  font-size: 15px;
+  outline: none;
+  border-radius: 5px;
+}
+/*buttons*/
+#msform .action_button {
+  width: fit-content;
+  font-family: var(--font-family);
+  background: #46494c;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: 0.5s all;
+  border: solid 1px #ffffff;
+}
+#msform .action_button:hover,
+#msform .action_button:focus {
+  background: transparent;
+  border: solid 1px #46494c;
+  color: #46494c;
+}
+.form input::placeholder {
+  font-family: var(--font-family);
+}
+/*headings*/
+.fs_title {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 991px) {
+  .card {
+    font-size: 20px;
+    &__title {
+      font-size: 24px;
+    }
+  }
+  .payment {
+    border-radius: 10px;
+    padding: 15px 20px;
+    max-width: 500px;
+    font-size: 24px;
+
+    & span {
+      & svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .ifnot {
+    &__grid {
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    &__gridFlex {
+      gap: 10px;
+    }
+    &__cardTitle1 {
+      width: 100%;
+      max-width: 610px;
+    }
+    &__firstCard {
+      margin-bottom: 15px;
+    }
+  }
+  #msform {
+    width: fit-content;
+  }
+  .card {
+    &__title1 {
+      font-size: 26px;
+    }
+  }
+  .payment {
+    border-radius: 10px;
+    padding: 12px;
+    max-width: 339px;
+    font-size: 18px;
+
+    & span {
+      & svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .ifnot {
+    padding: 25px 0;
+    &__title {
+      margin-bottom: 15px;
+    }
+  }
+  .card {
+    font-size: 16px;
+    &__title {
+      font-size: 18px;
+    }
+    &__title1 {
+      font-size: 18px;
+    }
+  }
+  .payment {
+    font-size: 14px;
+    margin: 0px auto 20px;
+
+    & span {
+      & svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 350px) {
+  .card {
+    font-size: 14px;
+    &__title {
+      font-size: 16px;
+    }
+    &__title1 {
+      font-size: 16px;
+    }
+  }
+
+  .action_button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  #msform inputsdc {
+    font-size: 14px;
+  }
+}

@@ -49,7 +49,7 @@
   }
 
   .headerLink {
-    font-family: var(--font-family);
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 1.3em;
@@ -65,7 +65,7 @@
     line-height: 22px;
     text-align: center;
     color: #fffffc;
-    font-family: var(--font-family);
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #c05124;
     transition: all 0.3s;
 
@@ -176,10 +176,10 @@
   }
 }
 
-@media (width < 1113px) {
+@media (width < 1140px) {
   .header {
     .headerLink {
-      font-size: 18px;
+      font-size: 16px;
     }
     .headerList {
       gap: 80px;
@@ -191,18 +191,19 @@
     }
   }
 }
-@media (width < 989px) {
+@media (width < 1082px) {
   .header {
     .headerList {
       gap: 60px;
     }
   }
 }
-@media (width < 909px) {
+@media (width < 957px) {
   .header {
     .headerList {
-      gap: 40px;
+      gap: 25px;
     }
+    
   }
 }
 @media (max-width: 834px) {

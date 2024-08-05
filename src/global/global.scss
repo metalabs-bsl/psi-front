@@ -1,7 +1,14 @@
 @import "./reset";
 
+:root {
+  --second-family: 'Prata', serif;
+  --font-family: 'LobsterTwo', sans-serif;
+}
 body {
   background: #f0f2ef;
+  font-family: var(--second-family);
+  font-family: var(--font-family);
+
 }
 
 .container {
@@ -21,4 +28,7 @@ body {
     font-style: italic;
     font-family: var(--font-family);
   }
+}
+html {
+  scroll-behavior: smooth;
 }

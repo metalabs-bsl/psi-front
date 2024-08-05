@@ -6,6 +6,8 @@ import { AboutCourse } from "@/components/AboutCourse/AboutCourse";
 import { AboutAuthor } from "@/components/AboutAuthor/AboutAuthor";
 import { VideoCourse } from "@/components/VideoCourse/VideoCourse";
 import { Prices } from "@/components/Prices/Prices";
+import { SwiperReviews } from "@/components/Swiper/SwiperReviews";
+import Form from "@/components/Form/Form";
 
 
 export default function Home() {
@@ -16,9 +18,11 @@ export default function Home() {
         <Hero />
         <Advantages />
         <AboutCourse />
-        {/* <AboutAuthor /> */}
-        {/* <VideoCourse /> */}
-        {/* <Prices /> */}
+        <AboutAuthor />
+        <VideoCourse />
+        <Prices />
+        <SwiperReviews />
+        <Form />
       </main>
     </>
   );

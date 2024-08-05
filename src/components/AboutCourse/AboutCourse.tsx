@@ -1,7 +1,7 @@
 import styles from "./AboutCourse.module.scss";
 export const AboutCourse = () => {
   return (
-    <section className={styles.aboutCourse}>
+    <section className={styles.aboutCourse} id="course">
       <div className={`${styles.container} container`}>
         <div className={styles.wrapper}>
           <div className={styles.inner}>

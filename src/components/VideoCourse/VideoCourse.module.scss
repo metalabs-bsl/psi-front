@@ -1,24 +1,15 @@
-.container {
-  border-radius: 20px;
-  background: #fffffc;
-  padding: 40px;
-}
+
 .video {
   margin-bottom: 40px;
-
-  .title {
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 42px;
-    color: #242423;
-    margin-bottom: 20px;
-
-    & span {
-      font-family: var(--font-family);
-      font-style: italic;
-      color: #c05124;
-    }
+  padding: 0 15px;
+  .container {
+    border-radius: 20px;
+    background: #fffffc;
+    padding: 40px;
+    max-width: 1240px;
   }
+  
+  
 
   .subtitle {
     font-family: var(--font-family);
@@ -69,6 +60,48 @@
         border-radius: 50%;
         background-color: #c05124;
       }
+    }
+  }
+}
+
+@media (max-width:834px) {
+.video {
+  .inner {
+    padding: 30px;
+    .innerTitle {
+      font-size: 30px;
+    }
+  }
+  .subtitle {
+    font-size: 36px;
+  }
+  
+  .innerList {
+    font-size: 22px;
+  }
+  .container {
+    padding: 30px;
+    }
+}
+}
+
+@media (max-width:460px) {
+  .video {
+    .container {
+      padding: 15px;
+      }
+    .inner {
+      padding: 15px 10px;
+      .innerTitle {
+        font-size: 26px;
+      }
+    }
+    .subtitle {
+      font-size: 30px;
+    }
+   
+    .innerList {
+      font-size: 18px;
     }
   }
 }

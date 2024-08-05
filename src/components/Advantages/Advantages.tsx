@@ -1,7 +1,7 @@
 import styles from "./Advantages.module.scss";
 export const Advantages = () => {
   return (
-    <section className={styles.advantages}>
+    <section className={styles.advantages} id="advantages">
       <div className={`${styles.advantagesContainer} container`}>
         <div className={styles.advantagesWrapper}>
           <h2 className={`${styles.advantagesTitle} defTitle`}>

@@ -3,7 +3,7 @@ import heroBg from "../../../public/images/Image.png";
 import styles from "./Hero.module.scss";
 export const Hero = () => {
   return (
-    <div className={`${styles.heroContainer} container`}>
+    <div className={`${styles.heroContainer} container`} id="hero">
       <div className={styles.hero}>
         <div className={styles.heroInner}>
           <h1 className={styles.heroTitle}>

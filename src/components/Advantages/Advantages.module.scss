@@ -69,9 +69,10 @@
   .blockTitle {
     font-family: var(--second-family);
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.3em;
     color: #242423;
+    margin-bottom: 8px;
   }
 
   .blockText {
@@ -104,6 +105,10 @@
     .blocksWrapper {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
+    .advantagesWrapper {
+      padding: 30px;
+    }
+
     .advantagesTitle {
       font-size: 36px;
     }
@@ -123,6 +128,10 @@
 }
 @media (max-width: 375px) {
   .advantages {
+    .advantagesWrapper {
+      padding: 15px;
+    }
+
     .blocksWrapper {
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }

@@ -1,0 +1,85 @@
+.swiper-wrapper {
+    height: 500px;
+    width: 250px;
+  }
+  .swiper-slide {
+    height: 100%;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #C05124;
+    transform: translateY(-22%) rotate(180deg);
+  
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 20px;
+      background: url("../../../public/images/arrow.svg") no-repeat center/contain;
+    }
+  }
+  .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #C05124;
+    transform: translateY(-22%);
+  
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 20px;
+      background: url("../../../public/images/arrow.svg") no-repeat center/contain;
+    }
+  }
+
+  @media (max-width:834px) {
+    .swiper-wrapper {
+      height: 400px;
+    }
+  .swiper-slide {
+    width: 200px;
+    height: 400px;
+
+    img {
+      width: 200px;
+      height: 400px;
+      }
+  }
+  }
+  @media (max-width:375px) {
+    .swiper-wrapper {
+      height: 280px;
+    }
+  .swiper-slide {
+    width: 140px;
+    height: 280px;
+
+    img {
+      width: 140px;
+      height: 280px;
+      }
+  }
+  .swiper-button-prev {
+  width: 45px;
+  height: 45px;
+  }
+  .swiper-button-next { 
+    width: 45px;
+  height: 45px;
+  }
+  }
