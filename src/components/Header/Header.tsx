@@ -70,7 +70,7 @@ export const Header = () => {
               </a>
             </li>
           </ul>
-          <button className={styles.headerBtn}><a href="#form">Купить курс</a></button>
+         <a href="#form" className={styles.headerBtn}>Купить курс</a>
         </nav>
         <button className={styles.header__burger} onClick={openMenu} hidden>
           <div className={styles.burger__btn_line}></div>Меню
@@ -140,9 +140,8 @@ export const Header = () => {
                     </a>
                   </li>
                   <li>
-                    <button onClick={closeMenu} className={styles.header__btn}>
-                      <a href="#form">Купить курс</a>
-                    </button>
+
+                      <a href="#form" onClick={closeMenu} className={styles.header__btn}>Купить курс</a>  
                   </li>
                 </ul>
               </nav>

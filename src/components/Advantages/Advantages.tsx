@@ -74,11 +74,11 @@ export const Advantages = () => {
                 стройности
               </p>
             </li>
-            <a className={styles.blockLink} href="">
             <li className={styles.block}>
+            <a className={styles.blockLink} href="#form">
                 Получить доступ к курсу прямо сейчас
-            </li>
             </a>
+            </li>
 
           </ul>
         </div>

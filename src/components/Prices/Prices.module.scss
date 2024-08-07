@@ -168,7 +168,10 @@
     }
     &__list {
       li::before {       
-        left: -30px;
+        left: -25px;
+        top: 5px;
+        width: 15px;
+        height: 15px;
       }
     }
   }
