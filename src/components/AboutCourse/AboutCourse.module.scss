@@ -141,6 +141,9 @@
 }
 @media (max-width:375px) {
   .aboutCourse {
+    .topItem {
+      padding: 20px;
+    }
     .title {
       font-size: 26px;
     }
@@ -148,16 +151,25 @@
       font-size: 16px;
     }
     .bottomText {
-      font-size: 18px;
+      font-size: 16px;
     }
     .bottomList {
       padding: 0;
+      .bottomItem {
+        padding: 15px 10px;
+      }
     }
     .inner {
       padding: 15px;
     }
     .topList {
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    .textCircle {
+      & span {
+        top: 0;
+        left: 5px;
+      }
     }
   }
 

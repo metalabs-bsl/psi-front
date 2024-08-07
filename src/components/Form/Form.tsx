@@ -36,7 +36,7 @@ const Form: FC = () => {
 
     try {
       const response = await axios.post(
-        "https://metalabs.kg:8086/applications",
+        "http://192.168.68.153:3003/applications",
         reqBody,
         {
           headers: {

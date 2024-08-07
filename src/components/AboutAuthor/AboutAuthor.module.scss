@@ -110,5 +110,11 @@
     .text {
       font-size: 18px;
     }
+    .item {
+      :before {
+        top: 0;
+        left: 5px;
+      }
+    }
   }
 }
