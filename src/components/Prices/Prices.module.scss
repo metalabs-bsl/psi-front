@@ -43,7 +43,6 @@
     margin-bottom: 40px;
   }
   &__list {
-    font-family: var(--font-family);
     font-weight: 400;
     font-size: 24px;
     text-transform: lowercase;
@@ -69,7 +68,6 @@
     }
   }
   &__desc {
-    font-family: var(--font-family);
     font-weight: 400;
     font-size: 20px;
     color: #242423;
@@ -146,19 +144,20 @@
       padding: 20px;
     }
     &__subTitle {
-      font-size: 26px;
-    }
-    &__price {
-      font-size: 26px;
-    }
-    &__list {
       font-size: 18px;
     }
-    &__desc {
+    &__price {
+      padding-top: 15px;
+      font-size: 18px;
+    }
+    &__list {
       font-size: 16px;
     }
+    &__desc {
+      font-size: 14px;
+    }
     &__btn {
-      font-size: 22px;
+      font-size: 18px;
     }
     &__price {
     height: 50px;

@@ -17,7 +17,6 @@
     margin-bottom: 40px;
     margin-left: 40px;
   span {
-    font-family: var(--font-family);
     font-style: italic;
     font-weight: 400;
     font-size: 42px;
@@ -40,11 +39,11 @@
 
 @media (max-width:375px) {
     .swTitle {
-        font-size: 25px;
+        font-size: 20px;
         margin-left: 15px;
         span {
         font-size: 30px;
-        font-size: 25px;
+        font-size: 20px;
 
         }
     }

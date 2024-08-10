@@ -30,7 +30,6 @@
     flex-direction: column;
   }
   .text {
-    font-family: var(--font-family);
     font-weight: 400;
     font-size: 24px;
     color: #242423;
@@ -108,10 +107,11 @@
       padding: 15px;
     }
     .title {
-      font-size: 25px;
+      font-size: 18px;
+      font-weight: 500;
     }
     .text {
-      font-size: 16px;
+      font-size: 14px;
     }
     .item {
       padding-left: 24px;

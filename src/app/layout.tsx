@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { Lobster_Two, Inter, Prata  } from "next/font/google";
+import { Lobster_Two, Prata  } from "next/font/google";
 import "../global/global.scss";
-
-const inter = Inter({ subsets: ["latin"] });
 
 const prata = Prata({
   subsets: ['cyrillic'],
@@ -31,8 +29,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} ${lobster.className} ${prata.className}`}>{children}</body>
+    <html lang="en"  className={`${lobster.variable} ${prata.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }
