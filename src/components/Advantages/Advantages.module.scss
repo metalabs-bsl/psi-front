@@ -137,14 +137,14 @@
   }
 }
 }
-@media (max-width: 375px) {
+@media (max-width: 426px) {
   .advantages {
     .advantagesWrapper {
       padding: 15px;
     }
 
     .blocksWrapper {
-      grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
     .advantagesTitle {
       font-size: 18px;

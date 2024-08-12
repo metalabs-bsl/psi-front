@@ -134,10 +134,8 @@
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
   }
-  
-
 }
-@media (max-width:375px) {
+@media (max-width:426px) {
   .aboutCourse {
     .wrapper {
       padding: 15px;
@@ -165,7 +163,7 @@
       padding: 15px;
     }
     .topList {
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
     }
     .textCircle {
       padding-left: 24px;
