@@ -10,7 +10,7 @@ export const Advantages = () => {
           <ul className={styles.advantagesList}>
             <li className={styles.advantagesItem}>
               <p className={styles.advantagesText}>
-                вы устали от бесконечной борьбы с лишними килограммами?
+                Вы устали от бесконечной борьбы с лишними килограммами?
               </p>
             </li>
             <li className={styles.advantagesItem}>
@@ -27,7 +27,7 @@ export const Advantages = () => {
             </li>
           </ul>
           <h2 className={`${styles.advantagesTitle} defTitle`}>
-            Я- профессиональный гипнотерапевт предлагаю{" "}
+            Я - профессиональный гипнотерапевт предлагаю{" "}
             <span>революционный</span> подход к похудению:
           </h2>
           <ul className={styles.blocksWrapper}>
